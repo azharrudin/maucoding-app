@@ -1,0 +1,10 @@
+{
+    "language" : "Language",
+    "@language" : {
+        "description" : "The current language"
+    },
+    "darktheme" : "Dark Theme",
+    "@darktheme" : {
+        "description" : "Enable Dark Theme"
+    }
+}
