@@ -40,7 +40,12 @@ dependencies:
   shared_preferences: ^2.0.15
 
   #utils
-  intl: ^0.17.0
+  intl: ^0.18.0
+  http: ^1.1.0
+  getwidget: ^4.0.0
+  cached_network_image: ^3.2.3
+  video_player: ^2.7.1
+  pod_player: ^0.2.1
  
 dev_dependencies:
   flutter_test:
@@ -98,3 +103,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+

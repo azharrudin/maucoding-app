@@ -1,0 +1,4 @@
+#Mon Sep 18 21:57:35 WIB 2023
+base.0=/Users/muhammadtiflanilazharrudin/Workspace/MaucodingAPP/maucoding_app/flutter_app_template/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

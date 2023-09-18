@@ -15,11 +15,11 @@ const COLOR_TEXT_LIGHT = Color(0xff110D0E);
 const COLOR_TEXT_DARK = Color(0xffFEFDFF);
 const COLOR_TEXT2_DARK = Color(0xffFBFAED);
 
-const COLOR_BACK_LIGHT = Color(0xffFFFEFD);
-const COLOR_BACK_DARK = Color(0xff22343C);
+const COLOR_BACK_LIGHT = Color.fromARGB(255, 255, 255, 255);
+const COLOR_BACK_DARK = Color.fromARGB(255, 18, 18, 18);
 
-const COLOR_FORE_LIGHT = Color(0xffFBFAED);
-const COLOR_FORE_DARK = Color(0xff30444E);
+const COLOR_FORE_LIGHT = Color.fromARGB(255, 255, 255, 255);
+const COLOR_FORE_DARK = Color.fromARGB(255, 18, 18, 18);
 
 const COLOR_HIGH_BOTH = Color(0xff6aa6ff);
 const COLOR_BACK_BOTH = Color(0xffD0B0FF);

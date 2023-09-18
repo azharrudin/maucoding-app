@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.greetings_ai">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Greetings.ai"
         android:name="${applicationName}"
@@ -22,6 +23,7 @@
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+                
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>

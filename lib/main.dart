@@ -97,25 +97,32 @@ class _ScreenContainerState extends State<ScreenContainer> {
     return Scaffold(
         extendBody: true,
         body: screens[screenIndex],
-        bottomNavigationBar: BottomNavigationBar(
-            iconSize: 35.0,
-            elevation: 1,
-            selectedFontSize: 0,
-            unselectedFontSize: 0,
-            selectedItemColor: Theme.of(context).colorScheme.primary,
-            unselectedItemColor: Theme.of(context).colorScheme.secondary,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-            currentIndex: screenIndex,
-            onTap: onNavigate,
-            items: [
-              BottomNavigationBarItem(
-                  label: 'People', icon: Icon(Icons.people)),
-              BottomNavigationBarItem(label: 'Create', icon: Icon(Icons.image)),
-              BottomNavigationBarItem(
-                  label: 'Settings', icon: Icon(Icons.settings))
-            ])
-        //TODO : Fix the navigation bar for iOS
-        );
+        bottomNavigationBar: Container(
+            decoration: BoxDecoration(                
+                boxShadow: [
+                  BoxShadow(
+                      color: Theme.of(context).colorScheme.secondary, spreadRadius: 0, blurRadius: 10),
+                ]),
+            child: BottomNavigationBar(
+                iconSize: 35.0,
+                elevation: 3,
+                selectedFontSize: 12,
+                unselectedFontSize: 12,
+                selectedItemColor: Theme.of(context).colorScheme.primary,
+                unselectedItemColor: Theme.of(context).colorScheme.secondary,
+                showSelectedLabels: true,
+                showUnselectedLabels: true,
+                currentIndex: screenIndex,
+                onTap: onNavigate,
+                items: [
+                  BottomNavigationBarItem(
+                      label: 'Belajar', icon: Icon(Icons.library_books)),
+                  BottomNavigationBarItem(
+                      label: 'Praktek', icon: Icon(Icons.code)),
+                  BottomNavigationBarItem(
+                      label: 'Settings', icon: Icon(Icons.settings))
+                ])
+            //TODO : Fix the navigation bar for iOS
+            ));
   }
 }
